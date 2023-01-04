@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework</title>
+  </head>
+  <body>
+    <!--
+Обязательное задание.
+
+Необходимо реализовать четыре функции, каждая функция должна принимать по два
+числа и выполнять одну из операций (каждая функция выполняет одну из них):
+1. Сложение
+2. Разность
+3. Умножение
+4. Деление
+
+Необходимо сделать так, чтобы функция вернула число, например выражение
+`console.log(sum(2, 6));` должно вывести число 8 в консоль (sum - функция
+сложения в данном примере, ваши названия функций могут отличаться).
+
+Округлять значения, которые возвращают функции не нужно, однако, обратите
+внимание на разность, функция должна вычесть из большего числа меньшее, либо
+вернуть 0, если числа равны.
+
+Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать
+не нужно.
+
+Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
+-->
+    <script>
+      "use strict";
+
+      let num1 = +prompt("Введите первое число");
+      let num2 = +prompt("Введите второе число");
+
+      /**
+       * @description Функция производит математичeское сложение двух чисел.
+       * @param {number} num1 Первое число, которое нужно сложить.
+       * @param {number} num2 Второе число, которое нужно сложить.
+       * @returns {number} Возвращает сумму двух чисел.
+       */
+      function getAddition(num1, num2) {
+        return num1 + num2;
+      }
+
+      /**
+       * @description Функция производит математичeское вычитание двух чисел.
+       * @param {number} num1 Первое число, которое нужно вычесть.
+       * @param {number} num2 Второе число, которое нужно вычесть.
+       * @returns {number} Возвращает разность двух чисел.
+       */
+      function getSubtraction(num1, num2) {
+        if (num1 > num2) {
+          return num1 - num2;
+        } else if (num1 < num2) {
+          return num2 - num1;
+        } else if ((num1 = num2)) {
+          return 0;
+        }
+      }
+
+      /**
+       * @description Функция производит математичeское умножение двух чисел.
+       * @param {number} num1 Первое число, которое нужно умножить.
+       * @param {number} num2 Второе число, которое нужно умножить.
+       * @returns {number} Возвращает умножение двух чисел.
+       */
+      function getMultiplication(num1, num2) {
+        return num1 * num2;
+      }
+
+      /**
+       * @description Функция производит математичeское деление двух чисел.
+       * @param {number} num1 Первое число, которое нужно поделить.
+       * @param {number} num2 Второе число, которое нужно поделить.
+       * @returns {number} Возвращает деление двух чисел.
+       */
+      function getDivision(num1, num2) {
+        return num1 / num2;
+      }
+
+      console.log(getAddition(num1, num2));
+      console.log(getSubtraction(num1, num2));
+      console.log(getMultiplication(num1, num2));
+      console.log(getDivision(num1, num2));
+    </script>
+  </body>
+</html>
