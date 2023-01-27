@@ -1,0 +1,87 @@
+.registration {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px 0 96px 0;
+}
+
+.form-list-registration {
+  width: 32%;
+  list-style-type: none;
+}
+
+.label-name {
+  @include txt(300, 16px, 19px, $color-black);
+}
+
+.registration-input {
+  width: 360px;
+  height: 45px;
+  background-color: $color-white;
+  border: 1px solid #a4a4a4;
+  padding: 0 17px 0 17px;
+  margin: 20px 0 0 0;
+  // display: inline-block;
+}
+
+input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  margin: 31px 10px 33px 0;
+}
+
+.radio-style {
+  @include txt(300, 13px, 13px, $color-black);
+  padding-right: 20px;
+}
+
+.registration-input::-webkit-input-placeholder {
+  @include txt(300, 13px, 16px, #b1b1b1);
+}
+
+.registration-input:-moz-placeholder {
+  @include txt(300, 13px, 16px, #b1b1b1);
+}
+
+.password-description {
+  @include txt(300, 13px, 16px, #b1b1b1);
+  margin: 15px 0 39px 0;
+}
+
+.registration-form-button {
+  &_property {
+    width: 167px;
+    min-height: 50px;
+    border: 1px solid $color-pink;
+    background-color: $color-pink;
+    @include txt(400, 14px, 17px, $color-white);
+    text-transform: uppercase;
+  }
+}
+
+.fa-arrow-right {
+  color: $color-white;
+  font-size: 15px;
+  margin: 0 0 0 20px;
+}
+
+.registration-description {
+  width: 58%;
+}
+
+.registration-text-block {
+  @include txt(300, 24px, 29px, $color-black);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.margin-text {
+  margin: 22px 0 21px 0;
+}
+
+.fa-check {
+  color: $color-black;
+  font-size: 20px;
+  margin: 0 22px 28px 0;
+}
