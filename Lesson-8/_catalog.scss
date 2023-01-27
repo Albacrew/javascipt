@@ -1,0 +1,112 @@
+.selection-box {
+  display: flex;
+  align-items: center;
+}
+
+.filter-catalog {
+  width: 360px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.filter-name {
+  display: block;
+  position: relative;
+  @include txt(600, 14px, 17px, $color-black);
+  text-transform: uppercase;
+  padding-left: 16px;
+  z-index: 2;
+  background-color: $color-white;
+  padding: 13px 0 16px 16px;
+}
+
+.filter-subname {
+  display: block;
+}
+
+.filter-name::-webkit-details-marker,
+.filter-subname::-webkit-details-marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+
+.fa-bars {
+  color: $color-black;
+  font-size: 15px;
+  padding-left: 11px;
+}
+
+.filter-catalog:hover .filter-name,
+.filter-catalog:hover .fa-bars {
+  color: $color-pink;
+}
+.filter-box {
+  width: 100%;
+  background-color: $color-white;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  box-sizing: border-box;
+  padding: 0 16px 0px 17px;
+  z-index: 1;
+  position: absolute;
+  display: block;
+}
+.filter-categories {
+  @include txt(400, 14px, 17px, $color-pink);
+  text-transform: uppercase;
+  padding: 11px 0 11px 11px;
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 24px;
+}
+
+.select-catalog {
+  //   width: 100%;
+  margin: 0;
+  padding: 51px 0 64px 0;
+}
+
+.select-catalog-text {
+  @include txt(400, 14px, 17px, #6f6e6e);
+  text-transform: uppercase;
+}
+
+.select-trending,
+.select-size {
+  @include txt(400, 14px, 16px, #6f6e6e);
+  margin: 0 28px 0 10px;
+}
+
+.select-price {
+  @include txt(400, 14px, 16px, #6f6e6e);
+  margin: 0 0 0 10px;
+}
+
+.nav-center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+
+.pagination a {
+  color: #c4c4c4;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  color: $color-pink;
+}
+
+.pagination a:hover:not(.active):not(.disable) {
+  background-color: #ddd;
+  color: $color-pink;
+}

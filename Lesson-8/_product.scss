@@ -1,0 +1,167 @@
+.new-arrivals {
+  margin-bottom: 64px;
+}
+
+.new-arrivals-header {
+  width: 100%;
+  height: 148px;
+  background-color: #f8f3f4;
+}
+
+.nav-breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.breadcrumb-heading {
+  @include txt(400, 24px, 29px, $color-pink);
+  text-transform: uppercase;
+}
+
+.breadcrumb {
+  @include txt(300, 14px, 17px, #636363);
+  text-transform: uppercase;
+}
+
+.breadcrumb-item.active {
+  color: $color-pink;
+  font-weight: 700;
+}
+
+.link-color {
+  color: #636363;
+}
+
+.link-color:hover {
+  color: $color-pink;
+}
+
+.breadcrumb-item.width {
+  width: 53px;
+}
+
+.new-arrivals-product {
+  width: 100%;
+  /* height: 148px; */
+  background-color: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
+.new-arrivals-product-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-box {
+  width: 47px;
+  height: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  transition: background-color 0.5s, color 0.5s;
+  &__arrow {
+    margin: 13px 17px 13px 17px;
+    &_size {
+      font-size: 21px;
+    }
+  }
+}
+
+.arrow {
+  color: #000000;
+  &_hover:hover {
+    color: $color-pink;
+  }
+  &_active:active {
+    color: $color-pink;
+  }
+}
+
+.new-arrivals-product-image {
+  margin: 11px 0 42px 0;
+}
+
+.new-arrivals-description {
+  width: $site-width;
+  height: 601px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+  background: $color-white;
+  transform: translate(0px, -64px);
+}
+
+.new-arrivals-description-title {
+  @include txt(300, 14px, 17px, $color-pink);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 65px 0 12px 0;
+}
+
+.new-arrivals-description-divider {
+  width: 63px;
+  height: 3px;
+  background: #ef5b70;
+  margin: auto;
+}
+
+.new-arrivals-description-subtitle {
+  @include txt(300, 18px, 22px, #4d4d4d);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 12px 0 49px 0;
+}
+
+.new-arrivals-description-text {
+  @include txt(300, 14px, 17px, #5e5e5e);
+  width: 555px;
+  text-align: center;
+  margin: auto;
+}
+
+.new-arrivals-description-price {
+  @include txt(300, 24px, 29px, #ef5b70);
+  text-align: center;
+  margin: 32px 0 65px 0;
+}
+
+.new-arrivals-description-second-divider {
+  width: 642px;
+  height: 1px;
+  border: 1px solid #eaeaea;
+  margin: auto;
+}
+
+.select-product {
+  margin: 0 auto;
+  padding: 65px 0 48px 0;
+  text-align: center;
+  &_property {
+    width: 211px;
+    min-height: 47px;
+    border: 1px solid #ff6a6a;
+    background: $color-white;
+    text-decoration: none;
+    margin-top: 48px;
+    @include txt(400, 16px, 47px, #f26376);
+  }
+}
+
+.select-product-text {
+  @include txt(400, 14px, 17px, #6f6e6e);
+  text-transform: uppercase;
+}
+
+select {
+  @include txt(400, 14px, 16px, #6f6e6e);
+  margin: 0 23px 0 9px;
+}
+
+.select-quantity {
+  margin-right: 0px;
+}
+
+.new-arrivals-description-button-add-logo {
+  fill: #ef5b70;
+  margin: 0 23px 0 0;
+}

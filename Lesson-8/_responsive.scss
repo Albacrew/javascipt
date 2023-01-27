@@ -1,0 +1,221 @@
+@media screen and (max-width: 768px) {
+  .header-menu {
+    padding: 18px 32px 0px 32px;
+  }
+
+  .menu-box {
+    padding: 25px;
+    width: 185px;
+    left: 33px;
+    height: 600px;
+  }
+
+  .brand-info-box {
+    height: 368px;
+    background-size: contain;
+    background-position-x: 22%;
+  }
+
+  .brand-info-wrapper {
+    padding: 138px 0 0 425px;
+  }
+
+  .brand-name-title {
+    @include txt(900, 44px, 53px, $color-black);
+  }
+
+  .brand-name-subtitle {
+    @include txt(700, 24px, 29px, $color-black);
+  }
+
+  .content {
+    padding: 3% 2% 0;
+  }
+
+  .categories-block-women,
+  .categories-block-men,
+  .categories-block-kids {
+    min-height: 168px;
+  }
+
+  .categories-block-accessories {
+    min-height: 116px;
+    margin: 19px 0 96px 0;
+  }
+
+  .product-item-box {
+    margin-bottom: 33px;
+  }
+
+  .featured-items {
+    margin-bottom: 65px;
+  }
+
+  .additional-information-flex-box {
+    flex-direction: column;
+    padding: 0 0 64px 0;
+  }
+
+  .additional-information-block {
+    margin-top: 48px;
+  }
+
+  .footer-top-flex {
+    flex-direction: column;
+    padding: 64px 10px 0 10px;
+  }
+
+  .footer-top-left-part {
+    margin-bottom: 48px;
+  }
+
+  .subscribe-form {
+    margin: 27px 0 140px 0;
+  }
+
+  .footer-top-part {
+    background-position: 24%;
+    // background-size: cover;
+    background-size: 350%;
+  }
+
+  .footer-bottom-flex {
+    padding: 22px 32px 22px 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .registration-icon,
+  .number-in-circle {
+    display: none;
+  }
+
+  .header-menu {
+    padding: 18px 16px 0px 16px;
+  }
+
+  .header-logo-icon {
+    margin-left: 0;
+  }
+
+  .search-icon-form__label {
+    margin-left: 40px;
+  }
+
+  .menu-box {
+    padding: 15px;
+    width: 160px;
+    top: 62px;
+    left: -110px;
+    height: 600px;
+  }
+
+  .menu-box:before {
+    left: 120px;
+  }
+
+  .brand-info-box {
+    height: 363px;
+    background-image: none;
+  }
+
+  .brand-info-wrapper {
+    // text-align: center;
+    padding: 148px 56px 0 56px;
+  }
+
+  .brand-name-title {
+    @include txt(900, 38px, 46px, $color-black);
+  }
+
+  .brand-name-subtitle {
+    @include txt(700, 20px, 24px, $color-black);
+  }
+
+  .content {
+    padding: 3% 2% 0;
+  }
+
+  .categories-flex-box {
+    padding: 64px 16px 64px 16px;
+    // flex-direction: column;
+  }
+
+  .block-size1 {
+    width: 100%;
+  }
+
+  .categories-block-women,
+  .categories-block-men,
+  .categories-block-kids {
+    min-height: 249px;
+    margin-top: 32px;
+  }
+
+  .categories-block-accessories {
+    min-height: 111px;
+    margin: 32px 0 0 0;
+  }
+
+  .product-item-box {
+    margin-bottom: 41px;
+  }
+
+  .featured-items {
+    margin-bottom: 96px;
+  }
+
+  .additional-information-flex-box {
+    padding: 0 0 81px 0;
+  }
+
+  .footer-top-part {
+    min-height: 550px;
+    background-position: 25%;
+    background-size: cover;
+  }
+
+  .footer-top-left-part {
+    width: 343px;
+    text-align: center;
+    @include txt(400, 18px, 22px, #222224);
+    margin-bottom: 60px;
+  }
+
+  .subscribe-form {
+    margin: 22px 0 110px 0;
+    &_property {
+      width: 96px;
+    }
+  }
+
+  .footer-top-right-text {
+    @include txt(400, 14px, 21px, #222224);
+  }
+
+  .first-line {
+    @include txt(700, 24px, 37px, #222224);
+  }
+
+  .subscribe-input {
+    width: 246px;
+  }
+
+  .footer-bottom-part {
+    height: 143px;
+  }
+
+  .footer-bottom-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+
+  .rights {
+    padding-bottom: 9px;
+  }
+
+  .social-icons {
+    margin: 43px 0 40px 0;
+  }
+}

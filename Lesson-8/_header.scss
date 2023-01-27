@@ -1,0 +1,239 @@
+.page-header {
+  width: 100%;
+  min-height: 75px;
+  background-color: $color-black;
+}
+
+.container {
+  max-width: $site-width;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: $site-width;
+  margin: 0 auto;
+}
+
+.wrapper-wide {
+  max-width: $site-width-wide;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 18px 5px 0px 5px;
+}
+
+.header-menu-left-part {
+  width: 25%;
+}
+
+.header-menu-right-part {
+  width: 25%;
+}
+
+.header-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-logo-icon {
+  fill: $color-grey;
+  margin-bottom: 25px;
+  vertical-align: middle;
+  transition: fill 0.5s;
+}
+
+.header-logo-icon:hover {
+  fill: $color-pink;
+}
+
+.header-logo-icon:active {
+  fill: $color-pink;
+}
+
+.search {
+  display: flex;
+  width: 200px;
+  height: 53px;
+  margin: 0 auto;
+}
+
+// .search-icon-form__label {
+//   display: block;
+//   width: 27px;
+//   height: 28px;
+// }
+
+.search-icon-form__input {
+  width: 0;
+  height: 0;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  transition: width 1s;
+  padding: 0 5px 0 5px;
+  margin-left: 10px;
+}
+
+.search-icon-form__input:focus {
+  border-bottom: 2px solid $color-pink;
+  width: 200px;
+  height: 28px;
+  color: $color-white;
+}
+
+.menu-list {
+  position: relative;
+}
+
+.menu-box {
+  background-color: $color-white;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.15);
+  padding: 35px;
+  width: 232px;
+  height: 764px;
+  position: absolute;
+  top: 56px;
+  left: 30px;
+  display: none;
+  z-index: 1;
+}
+
+.menu-heading {
+  @include txt(700, 14px, 17px, #000000);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.menu-categories {
+  @include txt(400, 14px, 17px, $color-pink);
+  text-transform: uppercase;
+  text-align: left;
+  padding: 24px 0 12px 0;
+}
+
+.menu-link {
+  display: block;
+  padding-left: 21px;
+  padding-bottom: 11px;
+  @include txt(400, 14px, 17px, #6f6e6e);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.menu-link:hover {
+  color: $color-pink;
+}
+
+.menu-box:before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: $color-white;
+  position: absolute;
+  top: -5px;
+  left: 12px;
+  transform: rotate(45deg);
+}
+
+.menu-list:hover .menu-box {
+  display: block;
+}
+
+.number-in-circle {
+  position: relative;
+}
+
+.counter {
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background-color: $color-pink;
+  border-radius: 50%;
+  top: -9px;
+  right: -9px;
+  @include txt(400, 14px, 16px, $color-grey);
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+// .number-in-circle::after {
+//   content: "5";
+//   display: block;
+//   width: 19px;
+//   height: 19px;
+//   background-color: $color-pink;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: -9px;
+//   right: -9px;
+//   @include txt(400, 14px, 16px, $color-grey);
+//   text-align: center;
+//   transition: background-color 0.5s, color 0.5s;
+// }
+
+.number-in-circle:hover .header-logo-icon {
+  fill: $color-pink;
+}
+
+.number-in-circle:hover .counter {
+  background-color: $color-grey;
+  color: $color-pink;
+}
+
+.number-in-circle:active .header-logo-icon {
+  fill: $color-pink;
+}
+
+.header-logo-icon:active .counter {
+  background-color: $color-grey;
+  color: $color-pink;
+}
+
+.header-logo-icon {
+  margin-left: 33px;
+}
+
+.SmallCartBox {
+  background-color: $color-white;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  width: 500px;
+  position: absolute;
+  top: 62px;
+  right: 0;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.cartBoxRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $color-grey;
+  padding-bottom: 10px;
+}
+
+.CartBoxHeader {
+  @include txt(700, 14px, 17px, $color-black);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.CartBoxTotal {
+  @include txt(700, 14px, 17px, $color-black);
+  text-align: right;
+}

@@ -1,0 +1,113 @@
+.footer-top-part {
+  min-height: 448px;
+  background-image: url(images/photo-subscribe.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.footer-top-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 10px 0 10px;
+}
+
+.footer-top-left-part {
+  width: 360px;
+  text-align: center;
+  @include txt(400, 20px, 24px, #222224);
+}
+
+.footer-top-part-image {
+  margin-bottom: 30px;
+}
+
+.footer-top-right-text {
+  text-transform: uppercase;
+  text-align: center;
+  @include txt(400, 18px, 30px, #222224);
+}
+
+.first-line {
+  @include txt(700, 24px, 40px, #222224);
+}
+
+.subscribe-form {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  &_property {
+    width: 100px;
+    height: 49px;
+    background-color: #e05c6e;
+    @include txt(400, 14px, 49px, $color-white);
+    border-radius: 0 20px 20px 0;
+    border: 1px solid transparent;
+    transition: background-color 0.5s, color 0.5s;
+  }
+}
+
+.subscribe-input {
+  width: 256px;
+  height: 49px;
+  background-color: #e1e1e1;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid transparent;
+  padding: 0 10px 0 22px;
+}
+
+.footer-bottom-part {
+  height: 79px;
+  background-color: $color-black;
+}
+
+.footer-bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 8px 22px 8px;
+}
+
+.rights {
+  @include txt(400, 16px, 19px, #fbfbfb);
+}
+
+.social-icons {
+  display: flex;
+  width: 148px;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons-box {
+  width: 32px;
+  height: 32px;
+  background-color: $color-white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.fa-brands {
+  color: #000000;
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.social-icons-box:hover {
+  background-color: $color-pink;
+}
+
+.social-icons-box:active {
+  background-color: $color-pink;
+}
+
+.social-icons-box:hover .fa-brands {
+  color: $color-white;
+}
+
+.social-icons-box:active .fa-brands {
+  color: $color-white;
+}
